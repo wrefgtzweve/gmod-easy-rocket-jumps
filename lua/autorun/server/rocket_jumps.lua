@@ -34,9 +34,7 @@ local function reduceRocketDamage( ent, dmginfo )
     if not allExplosions and attacker ~= ent then return end
 
     local dmgForce = dmginfo:GetDamageForce()
-
     local newForce = dmgForce * forceMult
-
     dmginfo:SetDamageForce( newForce )
 
     if ent:KeyDown( IN_DUCK ) then
